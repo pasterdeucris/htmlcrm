@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .crm-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .table-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .date-display {
+            font-size: 0.9em;
+            color: #ecf0f1;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ecf0f1;
+            color: #2c3e50;
+            font-size: 0.9em;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        .estado {
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-weight: 500;
+            font-size: 0.85em;
+            display: inline-block;
+        }
+        .pedidos-ya {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .en-proceso {
+            background-color: #f1c40f;
+            color: #34495e;
+        }
+        .cancelado {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .persona-tag {
+            background-color: #edf2f7;
+            color: #4a5568;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="crm-container">
+        <div class="table-header">
+            <span>Sistema de Gestión de Clientes</span>
+            <span class="date-display">25 de Octubre, 2024</span>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>N° Documento</th>
+                    <th>Fecha</th>
+                    <th>Tipo Operación</th>
+                    <th>Nombre</th>
+                    <th>Identificación</th>
+                    <th>Tipo Persona</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>51154754</td>
+                    <td>25-10-2024</td>
+                    <td>Venta</td>
+                    <td>AGUAYO ARRIAGADA JUANA MARIA</td>
+                    <td>91671891</td>
+                    <td><span class="persona-tag">Persona Natural</span></td>
+                    <td><span class="estado pedidos-ya">Pedidos Ya</span></td>
+                </tr>
+                <tr>
+                    <td>51154755</td>
+                    <td>25-10-2024</td>
+                    <td>Venta</td>
+                    <td>RODRIGUEZ SILVA CARLOS</td>
+                    <td>91671892</td>
+                    <td><span class="persona-tag">Persona Natural</span></td>
+                    <td><span class="estado en-proceso">En Proceso</span></td>
+                </tr>
+                <tr>
+                    <td>51154756</td>
+                    <td>25-10-2024</td>
+                    <td>Compra</td>
+                    <td>TECH SOLUTIONS S.A.</td>
+                    <td>91671893</td>
+                    <td><span class="persona-tag">Persona Jurídica</span></td>
+                    <td><span class="estado cancelado">Cancelado</span></td>
+                </tr>
+                <tr>
+                    <td>51154757</td>
+                    <td>25-10-2024</td>
+                    <td>Venta</td>
+                    <td>MENDOZA RUIZ ANA MARÍA</td>
+                    <td>91671894</td>
+                    <td><span class="persona-tag">Persona Natural</span></td>
+                    <td><span class="estado pedidos-ya">Pedidos Ya</span></td>
+                </tr>
+                <tr>
+                    <td>51154758</td>
+                    <td>25-10-2024</td>
+                    <td>Compra</td>
+                    <td>INVERSIONES ABC LTDA.</td>
+                    <td>91671895</td>
+                    <td><span class="persona-tag">Persona Jurídica</span></td>
+                    <td><span class="estado en-proceso">En Proceso</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
